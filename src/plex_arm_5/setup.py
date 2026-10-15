@@ -30,6 +30,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'teleop_node = plex_arm_5.teleop_node:main', # Calls the main function in the teleop_node.py file when the teleop_node command is executed. This allows the user to run the teleop_node directly from the command line without needing to specify the full path to the script.
         ],
     },
 )

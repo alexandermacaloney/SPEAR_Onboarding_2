@@ -12,10 +12,44 @@ for plex_arm_5 robot</p>
   <license>BSD</license>
   <buildtool_depend>ament_python</buildtool_depend>
 
-  <depend>robot_state_publisher</depend>
-  <depend>rviz</depend>
-  <depend>joint_state_publisher_gui</depend>
-  <depend>gazebo</depend>
+  <!-- Python nodes and launch files -->
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>control_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>ros2service</exec_depend>
+  <exec_depend>joy</exec_depend>
+
+  <!-- Robot description and visualization -->
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Retained from the original package for the club's Gazebo workflows -->
+  <exec_depend>gazebo</exec_depend>
+
+  <!-- Mock hardware and controller plugins -->
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>hardware_interface</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+
+  <!-- MoveIt Servo, RViz display, and configured planning plugins -->
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>moveit_core</exec_depend>
+  <exec_depend>moveit_servo</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_planners_chomp</exec_depend>
+  <exec_depend>pilz_industrial_motion_planner</exec_depend>
  <export>
     <build_type>ament_python</build_type>
   </export>

@@ -59,7 +59,7 @@ def generate_launch_description():
         package = 'rviz2',
         executable = 'rviz2',
         name = 'rviz2',
-        arguments = [rviz_config],
+        arguments = ['-d', rviz_config], # AI Fix: -d tells RViz to load the display configuration. Your saved file already includes the robot display and sets the fixed frame to base_link. 
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
@@ -97,7 +97,6 @@ def generate_launch_description():
         executable="servo_node_main",
         name="servo_node",
         output="screen",
-        arguments=[{'use_intra_process_comms' : True}],
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,

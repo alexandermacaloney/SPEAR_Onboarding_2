@@ -1,0 +1,7 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.vscode/
+/Onboarding_Project_2 V2 doc.pdf
